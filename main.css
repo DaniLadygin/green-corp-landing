@@ -3,7 +3,13 @@ header {
     justify-content: space-between;
     align-items: center;
     padding:20px;
-    
+    position: fixed;
+    background: none;
+    left: 0;
+    right: 0;
+    transition: box-shadow, background-color .25s ease;
+  }
+       
   }
   .header__logo {
     height: 30px;
@@ -66,8 +72,8 @@ header {
     align-items: center;
     justify-content: space-around;
     padding-bottom: 115px;
-    padding-top: 115px;
     position: relative;
+    padding-top: 200px;
   }
   
   .about h1 {
@@ -189,10 +195,17 @@ footer h3 {
   margin-bottom: 15px;
 }
 header {
-  position: sticky;
+  position: fixed;
   top: 0;
-  background: white;
+  left: 0;
+  right: 0;
+  transition: box-shadow, background-color .25s ease;
+  background: none;
   z-index: 1;
+}
+.header__scrolled {
+  background-color: white;
+  box-shadow: 0 12px 34px -11px rgb(65 62 101 / 10%);
 }
 
 @media (max-width: 720px) {
